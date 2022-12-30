@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NeonCube.</title>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="background-image: url(ChannelBanner.png); display: flex; align-items: center; width: 100vw; height: 100vh;">
+        <audio src="green room.mp3" autoplay loop></audio>
+        <p style="margin: auto; font-family: Space Grotesk, sans-serif; color: #3B4252; font-size: xx-large;">Website
+            Coming Up Soon<span id="dot">.</span></p>
+    </div>
+</body>
+
+<script>
+    const colors = ["#88C0D0", "#BF616A", "#D08770", "#EBCB8B", "#A3BE8C", "#B48EAD"]
+
+    window.onload = function (params) {
+        document.getElementById("dot").setAttribute("style", `color: ${colors[Math.floor(Math.random() * colors.length)]};`)
+    }
+</script>
+
+</html>
